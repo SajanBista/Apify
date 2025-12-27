@@ -1,0 +1,12 @@
+{
+  "name": "rvonthego-scraper",
+  "title": "RV On The Go Scraper",
+  "version": "0.0.1",
+  "main": "src",
+  "builds": [
+    {
+      "src": "Dockerfile",
+      "use": "@apify/docker"
+    }
+  ]
+}

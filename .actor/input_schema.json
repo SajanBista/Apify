@@ -1,0 +1,25 @@
+{
+  "name": "rv-on-the-go-scraper",
+  "version": "0.0.1",
+  "title": "RV On The Go Scraper",
+  "description": "Scrapes RV On The Go campgrounds and availability",
+  "type": "docker",
+  "main": "src/__main__.py",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "inputSchema": "input_schema.json",
+  "apifyVersion": "3.1.0",
+  "env": {
+    "PROXY": {
+      "title": "Proxy URL",
+      "description": "Your local proxy URL for testing. Remove to use Apify Proxy when running in Apify platform.",
+      "type": "string",
+      "default": ""
+    }
+  },
+  "defaultActorRunOptions": {
+    "memoryMbytes": 1024,
+    "timeoutSecs": 1800
+  }
+}
